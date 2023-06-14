@@ -133,9 +133,13 @@ function currentSlide(n) {
 function showSlides(n) {
     let i = 0;
     let slides = document.getElementsByClassName("product-item");
-    console.log(slides);
-    if (n > slides.length) { slideIndex = 0 }
-    if (n < 0) { slideIndex = slides.length }
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    else if (n < 0) {
+        slideIndex = slides.length - 1;
+
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -145,7 +149,6 @@ function showSlides(n) {
 
 
 function renderSlide(n) {
-    slideIndex = 0;
     if (n === 0) {
         let htmls = project4.map(item => {
             return `
@@ -203,6 +206,7 @@ function clickProject() {
     project.classList.remove('show')
     projectIcon.classList.add('active')
     homeIcon.classList.remove('active')
+    currentSlide(0)
 }
 
 function clickHome() {
@@ -210,12 +214,4 @@ function clickHome() {
     home.classList.remove('show')
     homeIcon.classList.add('active')
     projectIcon.classList.remove('active')
-}
-
-function clickNavbar(navbar) {
-    for (i = 0; i < navbars.length; i++) {
-        // navbars[i].style.display
-    }
-    console.log(navbar);
-    // slides[slideIndex].style.display = "block";
 }
