@@ -2,7 +2,7 @@ const home = document.querySelector('.home')
 const project = document.querySelector('.project')
 const projectIcon = document.querySelector('.project-icon')
 const homeIcon = document.querySelector('.home-icon')
-const product = document.querySelector('.product')
+const product = document.querySelector('.product-slide')
 
 const project0 = [
     {
@@ -152,12 +152,6 @@ function renderSlide(n) {
             <div class="product-item fade">
                 <img src="${item.url}" alt="">
             </div>
-            <span onclick=plusSlides(-1)>
-                <i class="product-icon left fa-solid fa-chevron-left"></i>
-            </span>
-            <span onclick=plusSlides(1)>
-                <i class="product-icon right fa-solid fa-chevron-right"></i>
-            </span>
             `
         })
         product.innerHTML = htmls.join('')
@@ -168,12 +162,6 @@ function renderSlide(n) {
             <div class="product-item fade">
                 <img src="${item.url}" alt="">
             </div>
-            <span onclick=plusSlides(-1)>
-                <i class="product-icon left fa-solid fa-chevron-left"></i>
-            </span>
-            <span onclick=plusSlides(1)>
-                <i class="product-icon right fa-solid fa-chevron-right"></i>
-            </span>
             `
         })
         product.innerHTML = htmls.join('')
@@ -184,12 +172,6 @@ function renderSlide(n) {
             <div class="product-item fade">
                 <img src="${item.url}" alt="">
             </div>
-            <span onclick=plusSlides(-1)>
-                <i class="product-icon left fa-solid fa-chevron-left"></i>
-            </span>
-            <span onclick=plusSlides(1)>
-                <i class="product-icon right fa-solid fa-chevron-right"></i>
-            </span>
             `
         })
         product.innerHTML = htmls.join('')
@@ -200,12 +182,6 @@ function renderSlide(n) {
             <div class="product-item fade">
                 <img src="${item.url}" alt="">
             </div>
-            <span onclick=plusSlides(-1)>
-                <i class="product-icon left fa-solid fa-chevron-left"></i>
-            </span>
-            <span onclick=plusSlides(1)>
-                <i class="product-icon right fa-solid fa-chevron-right"></i>
-            </span>
             `
         })
         product.innerHTML = htmls.join('')
@@ -216,12 +192,6 @@ function renderSlide(n) {
             <div class="product-item fade">
                 <img src="${item.url}" alt="">
             </div>
-            <span onclick=plusSlides(-1)>
-                <i class="product-icon left fa-solid fa-chevron-left"></i>
-            </span>
-            <span onclick=plusSlides(1)>
-                <i class="product-icon right fa-solid fa-chevron-right"></i>
-            </span>
             `
         })
         product.innerHTML = htmls.join('')
